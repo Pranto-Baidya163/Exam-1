@@ -1,0 +1,22 @@
+void main() {
+ var obj1 = Media();
+  obj1.play();
+
+ var obj2 = Song();
+  obj2.play();
+}
+
+class Media{
+  play(){
+    print('Playing media...');
+  }
+}
+class Song extends Media{
+  
+  String? artist = 'Eminem';
+  
+  @override
+  play(){
+    print('Playing song by $artist');
+  }
+}
